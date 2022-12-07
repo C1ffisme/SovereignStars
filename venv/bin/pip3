@@ -1,4 +1,4 @@
-#!/home/c1ff/PycharmProjects/SovereignStars/venv/bin/python3
+#!/home/c1ff/Programming/SovereignStars/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
