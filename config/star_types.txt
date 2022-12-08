@@ -2,5 +2,15 @@ ID, NAME
 1, Red Dwarf
 2, Orange Dwarf
 3, Yellow Dwarf
-4, White Main Sequence
-5, Blue Main Sequence
+4, Blue Dwarf
+5, White Dwarf
+6, Red Giant
+7, Orange Giant
+8, Yellow Giant
+9, Blue Giant
+10, Red Supergiant
+11, Blue Supergiant
+12, Red Hypergiant
+13, Blue Hypergiant
+14, Black Hole
+15, Neutron Star
