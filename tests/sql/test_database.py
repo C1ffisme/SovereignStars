@@ -1,6 +1,7 @@
 import os
 from unittest import TestCase
 from sql.database import Database
+import configuration
 
 class TestGame(TestCase):
     def setUp(self):
@@ -11,4 +12,4 @@ class TestGame(TestCase):
 
     def testSaveDirectory(self):
         self.assertEqual(self.db1.get_save_directory(), os.path.abspath("../../databases/"))
-        self.assertEqual(self.db1.run_query("SELECT * FROM star_type"), [(1, "Yellow Dwarf"), (2, "Red Dwarf")])
+        self.assertEqual(self.db1.run_query("SELECT count(*) FROM star_type")[0][0], len(configuration.get_star_types()))

@@ -1,0 +1,6 @@
+ID, NAME
+1, Red Dwarf
+2, Orange Dwarf
+3, Yellow Dwarf
+4, White Main Sequence
+5, Blue Main Sequence
