@@ -4,6 +4,7 @@ from sql.database import Database
 import sql.database
 import configuration
 
+
 class TestGame(TestCase):
     def setUp(self):
         db_path = os.path.abspath("../../databases/")+"/"+"unittest_db.db"

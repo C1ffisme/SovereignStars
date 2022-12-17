@@ -1,18 +1,20 @@
+from types import NoneType
 from typing import List
 from multipledispatch import dispatch
 from game.objects.system import System
 
 
 class Nation(object):
-    @dispatch(str, int, list, int=None)
-    def __init__(self, name: str, owner_id: int, owned_stars: List[int], capital: int = None):
+    @dispatch(int, str, int, list, int)
+    def __init__(self, id: int, name: str, owner_id: int, owned_stars: List[int], capital: int = -1):
+        self.id = id
         self.name = name
         self.owner_id = owner_id
         self.owned_stars = owned_stars
         self.claimed_stars = []
 
-        if capital and capital not in owned_stars:
-            self.capital = None
+        if capital > 0 and capital not in owned_stars:
+            self.capital = -1
             print("WARNING: Attempted to declare a star not owned by player as capital. This is an invalid move!")
         else:
             self.capital = capital

@@ -1,6 +1,7 @@
 from random import random
 from multipledispatch import dispatch
 
+
 class System(object):
     @dispatch(int, float, float, list[str], str=None, dict=None)
     def __init__(self, id: int, x: float, y: float, star_types: list[str], name: str = None, resources: dict = None):

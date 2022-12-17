@@ -20,6 +20,7 @@ def get_ship_types():
 
     return rlist
 
+
 def get_attack_types():
     rlist = []
     stlist = read_tuple_file("attack_types.txt", ["id", "name"])
